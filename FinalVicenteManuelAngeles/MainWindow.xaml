@@ -1,0 +1,23 @@
+﻿<Window x:Class="FinalVicenteManuelAngeles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalVicenteManuelAngeles"
+        mc:Ignorable="d"
+         Title="Home" Height="329" Width="644">
+    <Canvas>
+        <Button x:Name="btnGetAllProducts" Click="btnGetAllProducts_Click" Content="Get All Products" Canvas.Left="36" Canvas.Top="36" Height="41" Width="101" FontWeight="Bold"/>
+        <Button  x:Name="btnClear" Content="Clear Data" Canvas.Left="160" Canvas.Top="36" Height="41" Width="101" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnClear_Click"/>
+        <Label Content="Get Products by Category" Canvas.Left="36" Canvas.Top="93" Height="33" Width="187" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <ComboBox x:Name="productCombo" FontSize="13" FontWeight="bold" Width="225" Canvas.Left="36" Canvas.Top="126" Height="32" HorizontalAlignment="Left" VerticalAlignment="Center" SelectionChanged="productCombo_SelectionChanged"/>
+        <Label Content="Search Products by Name"  Canvas.Left="36" Canvas.Top="165" Height="33" Width="187" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtsearchProd" Canvas.Left="36" TextWrapping="Wrap" Canvas.Top="198" Width="148" Height="26"/>
+        <Button x:Name="btnSearch" Content="Search" Canvas.Left="200" Canvas.Top="198" RenderTransformOrigin="0.158,-0.202" Height="26" Width="61" FontWeight="Bold" Click="btnSearch_Click"/>
+        <Button x:Name="btnAddProd" Content="Add New Product" Canvas.Left="36" Canvas.Top="242" Height="33" Width="225" FontWeight="Bold" FontSize="14" Click="btnAddProd_Click"/>
+        <DataGrid x:Name="grdProducts" Height="239" Width="316" Canvas.Top="36" Canvas.Left="294" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+
+
+    </Canvas>
+</Window>
